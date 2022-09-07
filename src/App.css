@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: gray;
+  color: white;
+  font-family: 'SST', sans-serif;
+  margin: 20px 0;
+  text-align: center;
+}
+.grid {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 35px;
+}
+.card {
+  width: 170px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.462);
+}
+.card-photo {
+  border-radius: 50%;
+  width: 100%;
+}
+.card-user {
+  color: black;
+  margin-top: 20px;
+}
+.card-first-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
