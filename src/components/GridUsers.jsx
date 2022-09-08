@@ -10,10 +10,10 @@ const GridUsers = ( {limite} ) => {
 
   const getUsers = async () => {
 
-    // const data = await fetch(urlApi);
-    // const {results} = await data.json()
+    const data = await fetch(urlApi);
+    const {results} = await data.json()
 
-    const {results} = users;
+    // const {results} = users;
 
     const newUsers = results.map( user => {
       return {
