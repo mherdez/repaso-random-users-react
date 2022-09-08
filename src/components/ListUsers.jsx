@@ -1,11 +1,11 @@
 import Card from "./Card";
 
-const ListUsers = ( {dataUsers} ) => {
+const ListUsers = ( { dataUsers, changeActive } ) => {
 
   return (
     <>
-      { dataUsers.results.map( usuario => (
-        <Card key={usuario.login.uuid} usuario={usuario} />
+      { dataUsers.map( usuario => (
+        <Card key={usuario.id} usuario={usuario} changeActive={changeActive} />
       ))}
     </>
   );

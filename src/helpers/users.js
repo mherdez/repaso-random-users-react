@@ -1,5 +1,5 @@
 
-export const dataUsers = {
+export const users = {
   "results": [
       {
           "gender": "male",
